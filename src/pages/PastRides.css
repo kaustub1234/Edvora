@@ -1,0 +1,66 @@
+.pastStationDetails {
+    margin: 20px, 10px;
+    padding: 20px;
+    position: relative;
+    top: 50px;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    overflow: hidden;
+}
+
+.pastRide {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    background-color: #171717;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pastRide_Details {
+    font-size: 16px;
+    font: weight 300px;
+    text-align: left;
+    line-height: 5px;
+}
+
+.pastRide img {
+    border-radius: 10px;
+    width: 296px;
+    height: 148px;
+}
+
+.pastRide_location {
+    position: absolute;
+    right: 20px;
+    display: flex;
+}
+
+.location_state h3 {
+    background: rgba(0, 0, 0, 0.56);
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    display: inline;
+    margin: 0px 50px;
+}
+
+.location_city h3 {
+    background: rgba(0, 0, 0, 0.56);
+    border-radius: 20px;
+    padding: 5px 10px;
+    display: inline;
+    margin: 0px 60px;
+}
+
+.pastStationDetails h1{
+    background-color: rgba(0, 0, 0, 0.56);
+    width: 80%;
+    border-radius: 10px;
+    padding: 20px 10px;
+}

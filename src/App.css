@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.btn {
+  position: absolute;
+  top: 30px;
+}
+
+.btn2 {
+  position: absolute;
+  top: 50px;
+}

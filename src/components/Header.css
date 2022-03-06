@@ -1,0 +1,90 @@
+.nav_nearest {
+    position: absolute;
+    left: 43px;
+    top: 10px;
+    font-size: 18px;
+}
+
+.nav_upcoming {
+    position: absolute;
+    left: 235px;
+    top: 10px;
+    font-size: 18px;
+}
+
+.nav_past {
+    position: absolute;
+    left: 440px;
+    top: 10px;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(208, 203, 203, 1);
+}
+
+.nav a:hover,
+.nav a:active,
+.nav a.active {
+    cursor: pointer;
+    font-weight: bold;
+    border-bottom: 3px solid white;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.nav {
+    position: relative;
+    background-color: black;
+}
+
+.nav_FilterButton {
+    position: absolute;
+    right: 47px;
+    top: 10px;
+    font-size: 18px;
+}
+
+.nav_Filter {
+    position: absolute;
+    background-color: rgba(16, 16, 16, 1);
+    right: 10px;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
+    padding: 20px;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+select {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+select option {
+    padding: 10px 20px;
+}
+
+select:focus{
+    outline: none;
+}
+
+.nav_FilterButton{
+    background-color: #292929;
+    border: none;
+    cursor: pointer;
+    font-size:23px;
+    font-weight: bold;
+    color: white;
+}
+
+hr{
+    width: 100%;
+}

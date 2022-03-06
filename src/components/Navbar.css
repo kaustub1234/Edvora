@@ -1,0 +1,35 @@
+.navbar {
+    height: 84px;
+    background: rgba(16, 16, 16, 1);
+    position: relative;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+
+.navbar_logo {
+    position: absolute;
+    font-weight: bold;
+    left: 43px;
+    top: 21px;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+.userDetail_userName {
+    position: absolute;
+    font-weight: bold;
+    left: 1180px;
+    top: 30px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.userDetail_userImage {
+    position: absolute;
+    right: 80px;
+    top: 10px;
+    border-radius: 50%;
+    height: 60px;
+}
+
