@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# Live Demo
+deployed-Link:
+https://edvoraridesapp-e8sbs4aa0-kaustub1234.vercel.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://user-images.githubusercontent.com/56251255/158033462-3effb154-3a48-49c1-931a-b0d60950188b.mp4
 
-## Available Scripts
 
-In the project directory, you can run:
+# RideApp 
+This application was an internship task by edvora company the problem statement
+is described as follows:
+api url: https://assessment.api.vweb.app/rides
 
-### `npm start`
+Ride: [
+  {
+    id: 001,
+    origin_station_code: 23,
+    station_path: [23, 42, 45, 48, 56, 60, 77, 81, 93],
+    destination_station_code: 93,
+    date: 1644924365,
+    map_url: "url",
+    state: Maharashtra,
+    city: Panvel
+  },
+  {
+    id: 002,
+    origin_station_code: 20,
+    station_path: [20, 39, 40, 42, 54, 63, 72, 88, 98],
+    destination_station_code: 98,
+    date: 1644924365,
+    map_url: "url",
+    state: Maharashtra,
+    city: Panvel
+  },
+  {
+    id: 003,
+    origin_station_code: 13,
+    station_path: [13, 25, 41, 48, 59, 64, 75, 81, 91],
+    destination_station_code: 91,
+    date: 1644924365,
+    map_url: "url",
+    state: Maharashtra,
+    city: Panvel
+  },
+]
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+https://assessment.api.vweb.app/user
+user:  {
+    station_code: 40,
+    name: "Dhruv Singh",
+    profile_key: “url”,
+ }
+Nearest ride: A nearest ride is a ride that includes your station code or a number closest to your station code in the station_path array.For example, your station code is 40. So any ride that has your station code as nearest number in station_path array.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+That would be  id 002 the most nearest as it has your station code 40 in the station_path array. 
+Then id 003 has 41 from station_path array is nearest to your station code 40. 
 
-### `npm test`
+Then id 001 has 42 from station_path array nearest to your station code 40. Hence it would be 002 > 003 > 001.
+Please note: You cannot use the same ride twice
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Distance : Nearest station for your ride is your station code. 
+Example:For id 002, your station code is 40 and your ride also stops at your station so 
+the distance is 40-40 = 0for id 001, your station code is 40 and your ride stops at station 42, so the distance is 42-40 = 2
 
-### `npm run build`
+Upcoming ride: It shows all rides which has date in future. 
+Past ride: It shows all rides which has date in past. Filters
+Every ride has state and city. You need to get state and city from every ride object and create a list of state & city for the filters dropdown. 
+State : It shows rides from that state only. City: It shows rides from selected city only. If a state is already selected then the city dropdown will have cities from selected state only. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Feature
+- Nearest Rides
+- Upcoming Rides
+- Past Rides
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+after navigating to the project directory first install all the node modules:
 
-### `npm run eject`
+```bash
+ npm install 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+    
+## Starting the app
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+All commands to start and debug the app are outlined in the package.json file. To simply get it running run the following command while in your project repository.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+ npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
 
-## Learn More
+## for installation of live server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install -g live-server
+npm live-server
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
